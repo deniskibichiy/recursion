@@ -11,7 +11,21 @@ function fibs(n) {
         
     }
     console.log(array);
+    return array;
 }
 
+(fibs(20));
 
-(fibs(8));
+function recursFib(n) {
+    if (n == 0) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    } else {
+        return recursFib(n-1) + recursFib(n - 2);
+    }
+}
+
+console.log(recursFib(10));
+
+//export {recursFib}
