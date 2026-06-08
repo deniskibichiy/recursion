@@ -14,7 +14,7 @@ function fibs(n) {
     return array;
 }
 
-(fibs(20));
+(fibs(8));
 
 function fibElement(n) {
     if (n == 0) {
@@ -36,7 +36,12 @@ function recursFib(n) {
     } else {
         const array = recursFib(n-1);
         array.push(array[array.length-1] + array[array.length-2]);
+        return array;
     }
+    
 }
+
+console.log(recursFib(5));
+console.log(recursFib(8));
 
 //export {recursFib}
